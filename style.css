@@ -1,0 +1,103 @@
+/* --- Reset --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Helvetica', sans-serif; color: #444; line-height: 1.6; }
+
+/* --- Sidebar (Inglês Style) --- */
+.main-header {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 3rem;
+    position: fixed;
+    width: 35%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.main-header-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(255,255,255,0.1);
+    margin-bottom: 2rem;
+}
+
+.main-header-title { font-weight: 300; font-size: 1.3rem; }
+.main-header-link { color: #fff; text-decoration: none; opacity: 0.7; }
+.main-header-link:hover { opacity: 1; }
+
+/* --- Main Content --- */
+.main-content {
+    margin-left: 35%;
+    padding: 5rem;
+    max-width: 1200px;
+}
+
+.main-content-section { margin-bottom: 4rem; }
+h2, h3 { color: #494949; margin-bottom: 1.5rem; border-bottom: 2px solid #eee; padding-bottom: 0.5rem; }
+
+/* --- Gallery Centralized --- */
+.gallery-thumb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* CENTRALIZA TUDO */
+    gap: 30px;
+    margin-top: 2rem;
+}
+
+.recent-works-card {
+    flex: 0 1 350px; /* Largura fixa para manter o alinhamento */
+    text-align: left;
+}
+
+.recent-works-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.recent-works-card img:hover {
+    filter: brightness(1.1);
+    transform: translateY(-5px);
+}
+
+.recent-works-card-title {
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #494949;
+}
+
+/* --- Buttons --- */
+.button-default {
+    display: inline-block;
+    padding: 0.7rem 2rem;
+    border: 2px solid #efefef;
+    border-radius: 8px;
+    color: #444;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: 0.3s;
+}
+
+.button-default:hover { border-color: #49bf9d; color: #49bf9d; }
+
+/* --- Footer --- */
+.main-footer {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    width: 30%;
+    text-align: right;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.4);
+}
+.copyright { list-style: none; }
